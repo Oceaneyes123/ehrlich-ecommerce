@@ -3,6 +3,13 @@ body{
     color: black;
 }
 
+.visible{
+    display: block !important;
+}
+
+.hidden{
+    display: none !important;
+}
 
 /* NAVBAR */
 
@@ -49,6 +56,58 @@ body{
     height: 35px;
     width: 110px;
 }
+
+.shopping-button{
+    background-color: unset;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: block;
+    top:30px;
+    transform: translateX(-50%);
+    background: white;
+    min-width: 400px;
+}
+
+.dropdown-main{
+    background: white;
+    padding: 20px;
+}
+
+#cartItems img{
+    height: 100px !important;
+    width: 80px !important;
+}
+
+#cartItemsWrapper .checkout-button{
+    background-color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.checkout-button a{
+    text-decoration: none;
+    color: white;
+}
+
+#cartItems .item-details{
+    height: 100px;
+    text-align: left;
+    padding: 0 5px;
+}
+
+#cartItems .item-name{
+    font-weight: 600;
+}
+
+#cartItemsContainer{
+    display: none;
+}
+
+
 
 /* BANNER */
 
@@ -276,7 +335,7 @@ body{
 
 .recent-item{
     flex-basis: 15%;
-    height: 375px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -310,6 +369,13 @@ body{
     color: #C1272D;
     font-size: 14px;
     font-weight: 800;
+}
+
+.buy-button button{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 600;
 }
 
 /* INSPO */
