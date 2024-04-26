@@ -1,0 +1,416 @@
+body{
+    font-family: 'Montserrat';
+    color: black;
+}
+
+
+/* NAVBAR */
+
+.navbar-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar{
+    background-color: white !important;
+    font-size: 14px;
+}
+
+.active{
+    font-weight: 700;
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+
+.logo{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-options{
+    flex-grow: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-options img{
+    height: 25px;
+    width: 25px;
+}
+
+.currency img{
+    height: 35px;
+    width: 110px;
+}
+
+/* BANNER */
+
+.banner-wrapper{
+    display: flex;
+    background-color: #F2F2F2;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* HERO */
+.hero-wrapper{
+    background-image: url("./assets/hero.png");
+    background-size: cover;
+    height: 650px;
+    position: relative;
+}
+
+.hero-button{
+    position: absolute;
+    border: none;
+    background-color: white;
+    color: black;
+    right: 175px;
+    bottom: 100px;
+    font-size: 36px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+
+/* DISCOUNT */
+
+.discount-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+}
+
+.discount-deal-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.discount-price{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.discount-price .number{
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.discount-details{
+    font-size: 10px;
+}
+
+.discount button{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* VIP */
+
+.vip-wrapper{
+    background-image: url("./assets/vip.png");
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.vip-text-1{
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.vip-text-2{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.vip-action{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vip-action button{
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* TRENDING */
+
+.trending-header{
+    text-align: center;
+}
+
+.trending-wrapper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.trending-header .title{
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.trending-header .subtext{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.trending-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.trending-item-name{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.hashtags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hashtag-item{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* ARRIVAL */
+
+.arrival-wrapper{
+    color: white;
+    background-image: url("./assets/arrival.png");
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.arrival-details{
+    flex-basis: 35%;
+    margin: 20px 40px;
+}
+
+.arrival-header{
+    font-weight: 800;
+    font-size: 86px;
+}
+
+.arrival-text{
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.arrival button{
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* RECENTLY BOUGHT */
+
+.recently-wrapper{
+    text-align: center;
+    padding: 40px;
+}
+
+.recently-header{
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.recent-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.recent-item{
+    flex-basis: 15%;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recent-item-name{
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.recent-item .prices{
+    display: flex;
+    gap: 40px;
+}
+
+
+.recent-item .base-price{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.recent-item .old-price{
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: line-through;
+}
+
+.recent-item .new-price{
+    color: #C1272D;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* INSPO */
+
+.inspo-header{
+    text-align: center;
+}
+
+.inspo-wrapper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F2F2F2;
+}
+
+.inspo-header .title{
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.inspo-header .subtext{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.inspo-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.inspo-button {
+    text-align: center;
+}
+
+.inspo-button button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+/* NEWSLETTER */
+
+.newsletter-wrapper{
+    background-color: black;
+    font-size: 32px;
+    font-weight: 800;
+    height: 75px;
+}
+
+.newsletter input{
+    font-size: 14px;
+    width: 354px;
+    padding-right: 10px;
+}
+
+.input-container{
+    position: relative;
+}
+
+.input-container i{
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+
+.footer-wrapper{
+    padding-bottom: 40px;
+}
+
+.footer-1{
+    padding-top: 20px;
+}
+
+.footer-2{
+    padding-top: 20px;
+}
+
+.footer-header{
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-item{
+    font-size: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.payment-image{
+    width: 37px;
+    height: 25px;
+}
+
+.copyright{
+    font-size: 12px;
+}
+
