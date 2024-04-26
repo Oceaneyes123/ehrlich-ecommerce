@@ -44,6 +44,7 @@ function addToCart(){
     document.cookie = `cart=${JSON.stringify(cart)}${expires}`;
 }
 
+//This will open the overview of the shopping cart
 function viewCart(){
     let cartContainer = document.getElementById('cartItemsContainer');
     cartContainer.classList.toggle('visible');
@@ -70,7 +71,7 @@ function viewCart(){
         cartItems.removeChild(cartItems.firstChild);
     }
 
-    //
+    //Loop through the cart and create the elements
     for(let i = 0; i < cart.length; i++){
         let item = cart[i];
         let itemElement = document.createElement('div');
