@@ -3,12 +3,18 @@ body{
     color: black;
 }
 
+/* HELPERS */
+
 .visible{
     display: block !important;
 }
 
 .font-weight-bold{
     font-weight: 600;
+}
+
+.font-weight-black{
+    font-weight: 800;
 }
 
 .hidden{
@@ -44,10 +50,6 @@ body{
 
 .nav-options{
     flex-grow: 1;
-    display: flex;
-    gap: 10px;
-    justify-content: end;
-    align-items: center;
     gap: 20px;
 }
 
@@ -71,13 +73,12 @@ body{
     display: block;
     top:30px;
     transform: translateX(-50%);
-    background: white;
     min-width: 400px;
 }
 
 .dropdown-main{
-    background: white;
     padding: 20px;
+    z-index: 1;
 }
 
 #cartItems img{
@@ -116,9 +117,7 @@ body{
 /* BANNER */
 
 .banner-wrapper{
-    display: flex;
     background-color: #F2F2F2;
-    justify-content: space-around;
     padding: 10px;
     font-size: 12px;
 }
@@ -132,9 +131,7 @@ body{
 }
 
 .hero-button{
-    position: absolute;
     border: none;
-    background-color: white;
     color: black;
     right: 175px;
     bottom: 100px;
@@ -147,27 +144,17 @@ body{
 /* DISCOUNT */
 
 .discount-wrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 20px;
     height: 150px;
 }
 
-.discount-deal-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .discount-price{
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
 }
 
 .discount-price .number{
     font-size: 32px;
+    font-weight: 600;
     margin-right: 10px;
 }
 
@@ -176,7 +163,6 @@ body{
 }
 
 .discount button{
-    color: white;
     background-color: black;
     border: none;
     padding: 10px 20px;
@@ -189,27 +175,15 @@ body{
 .vip-wrapper{
     background-image: url("./assets/vip.png");
     height: 75px;
-    display: flex;
-    justify-content: space-between;
     gap: 20px;
 }
 
 .vip-text-1{
     font-size: 32px;
-    font-weight: 800;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
 }
 
 .vip-text-2{
     font-size: 18px;
-    font-weight: 600;
-    color: white;
-    display: flex;
-    align-items: center;
 }
 
 .vip-action{
@@ -220,18 +194,12 @@ body{
 }
 
 .vip-action button{
-    background-color: white;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
-    font-weight: 600;
 }
 
 /* TRENDING */
-
-.trending-header{
-    text-align: center;
-}
 
 .trending-wrapper{
     padding-top: 50px;
@@ -239,7 +207,6 @@ body{
 }
 
 .trending-header .title{
-    font-weight: 800;
     font-size: 32px;
     margin-bottom: 20px;
 }
@@ -250,26 +217,18 @@ body{
 }
 
 .trending-items{
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
     margin-bottom: 40px;
 }
 
 .trending-item-name{
-    text-align: center;
     font-size: 24px;
     font-weight: 600;
     margin-top: 10px;
 }
 
 .hashtags{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .hashtag-item{
@@ -277,19 +236,14 @@ body{
     border-radius: 50px;
     border: 1px solid black;
     font-size: 14px;
-    font-weight: 600;
 }
 
 
 /* ARRIVAL */
 
 .arrival-wrapper{
-    color: white;
     background-image: url("./assets/arrival.png");
     background-size: cover;
-    display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
 }
 
 .arrival-details{
@@ -298,57 +252,44 @@ body{
 }
 
 .arrival-header{
-    font-weight: 800;
     font-size: 86px;
 }
 
 .arrival-text{
-    font-weight: 600;
     font-size: 28px;
     margin-bottom: 30px;
 }
 
 .arrival button{
-    background-color: white;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
-    font-weight: 600;
 }
 
 /* RECENTLY BOUGHT */
 
 .recently-wrapper{
-    text-align: center;
     padding: 40px;
 }
 
 .recently-header{
-    font-weight: 800;
     font-size: 32px;
     margin-bottom: 20px;
 }
 
 .recent-items{
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
     margin-bottom: 40px;
 }
 
 .recent-item{
     flex-basis: 15%;
     height: 420px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .recent-item-name{
     font-size: 14px;
     margin-top: 10px;
-    text-align: left;
     margin-bottom: 10px;
 }
 
@@ -360,19 +301,16 @@ body{
 
 .recent-item .base-price{
     font-size: 14px;
-    font-weight: 800;
 }
 
 .recent-item .old-price{
     font-size: 14px;
-    font-weight: 800;
     text-decoration: line-through;
 }
 
 .recent-item .new-price{
     color: #C1272D;
     font-size: 14px;
-    font-weight: 800;
 }
 
 .buy-button button{
@@ -384,10 +322,6 @@ body{
 
 /* INSPO */
 
-.inspo-header{
-    text-align: center;
-}
-
 .inspo-wrapper{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -395,7 +329,6 @@ body{
 }
 
 .inspo-header .title{
-    font-weight: 800;
     font-size: 32px;
     margin-bottom: 20px;
 }
@@ -406,20 +339,13 @@ body{
 }
 
 .inspo-items{
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
     margin-bottom: 40px;
 }
 
-.inspo-button {
-    text-align: center;
-}
 
 .inspo-button button{
     background-color: black;
-    color: white;
     border: none;
     font-size: 18px;
     font-weight: 600;
@@ -431,7 +357,6 @@ body{
 .newsletter-wrapper{
     background-color: black;
     font-size: 32px;
-    font-weight: 800;
     height: 75px;
 }
 

@@ -12,6 +12,7 @@
     <title>Erlich Ecommerce</title>
 </head>
 <body>
+    <!-- NAVBAR -->
     <div class="navbar-container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -34,7 +35,7 @@
             <div class="logo">
                 <img src="assets/logo.png" alt="Logo">
             </div>
-            <div class="nav-options">
+            <div class="nav-options d-flex justify-content-end align-items-center">
                 <div>
                     <img src="assets/bx_bx-user.svg" alt="user">
                 </div>
@@ -44,8 +45,8 @@
                         <span id="addedItems" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             0
                         </span>
-                        <div class="dropdown-content position-absolute bottom-0">
-                            <div class="dropdown-main" id="cartItemsContainer">
+                        <div class="dropdown-content bg-white position-absolute bottom-0">
+                            <div class="dropdown-main bg-white" id="cartItemsContainer">
                                 <div id="cartItemsWrapper">
                                     <div id="cartItems">
 
@@ -79,8 +80,9 @@
         </nav>
     </div>
 
+    <!-- BANNER EXCLUSIVE -->
     <section class="banner">
-        <div class="banner-wrapper">
+        <div class="banner-wrapper d-flex justify-content-around">
             <div>
                 <img src="assets/bx_bx-crown.svg" alt="crown">
                 Exclusive Deals for VIP 2 and up!
@@ -104,178 +106,185 @@
         </div>
     </section>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-wrapper">
-            <button class="hero-button">
+            <button class="hero-button bg-white position-absolute">
                 SHOP NOW
             </button>
         </div>
     </section>
 
+
+    <!-- DISCOUNT -->
     <section class="discount">
-        <div class="discount-wrapper">
-            <div class="discount-deal-item">
-                <div class="discount-price"><span class="number">$5</span>OFF</div>
+        <div class="discount-wrapper d-flex justify-content-around align-items-center">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="discount-price font-weight-black"><span class="number">$5</span>OFF</div>
                 <div class="discount-details">ON ORDERS ABOVE $50</div>
             </div>
-            <div class="discount-deal-item">
-                <div class="discount-price"><span class="number">$15</span>OFF</div>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="discount-price font-weight-black"><span class="number">$15</span>OFF</div>
                 <div class="discount-details">ON ORDERS ABOVE $75</div>
             </div>
-            <div class="discount-deal-item">
-                <div class="discount-price"><span class="number">$20</span>OFF</div>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="discount-price font-weight-black"><span class="number">$20</span>OFF</div>
                 <div class="discount-details">ON ORDERS ABOVE $150</div>
             </div>
-            <div class="discount-deal-item">
-                <div class="discount-price"><span class="number">$30</span>OFF</div>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="discount-price font-weight-black"><span class="number">$30</span>OFF</div>
                 <div class="discount-details">ON ORDERS ABOVE $200</div>
             </div>
             <div>
-                <button>
+                <button class="text-white">
                     CHECK OUT ALL SITE-WIDE DEALS
                 </button>
             </div>
         </div>
     </section>
 
+    <!-- VIP -->
     <section class="vip">
-        <div class="vip-wrapper">
-            <div class="vip-text-1">BLACK FRIDAY EXCLUSIVE</div>
-            <div class="vip-text-2">FREE SHIPPING ON ALL ORDERS FOR <br> VIP 2 AND UP</div>
+        <div class="vip-wrapper d-flex justify-content-between">
+            <div class="vip-text-1 d-flex justify-content-center align-items-center text-white flex-grow-1 font-weight-black">BLACK FRIDAY EXCLUSIVE</div>
+            <div class="vip-text-2 d-flex align-items-center text-white font-weight-bold">FREE SHIPPING ON ALL ORDERS FOR <br> VIP 2 AND UP</div>
             <div class="vip-action">
-                <button>
+                <button class="bg-white font-weight-bold">
                     SHOP NOW
                 </button>
             </div>
         </div>
     </section>
 
+    <!-- TRENDING -->
     <section class="trending">
         <div class="trending-wrapper">
-            <div class="trending-header">
-                <div class="title">Now Trending</div>
+            <div class="trending-header text-center">
+                <div class="title font-weight-black">Now Trending</div>
                 <div class="subtext">See what everyone's wearing right now</div>
             </div>
-            <div class="trending-items">
+            <div class="trending-items d-flex flex-wrap justify-content-center">
                 <div class="trending-item">
                     <img src="assets/t1.png" alt="trending-1">
-                    <div class="trending-item-name">WINTER FASHION</div>
+                    <div class="trending-item-name text-center">WINTER FASHION</div>
                 </div>
                 <div class="trending-item">
                     <img src="assets/t2.png" alt="trending-2">
-                    <div class="trending-item-name">BOOTS</div>
+                    <div class="trending-item-name text-center">BOOTS</div>
                 </div>
                 <div class="trending-item">
                     <img src="assets/t3.png" alt="trending-3">
-                    <div class="trending-item-name">NIGHT OUT</div>
+                    <div class="trending-item-name text-center">NIGHT OUT</div>
                 </div>
                 <div class="trending-item">
                     <img src="assets/t4.png" alt="trending-4">
-                    <div class="trending-item-name">HOLIDAYS</div>
+                    <div class="trending-item-name text-center">HOLIDAYS</div>
                 </div>
             </div>
 
-            <div class="trending-items">
+            <div class="trending-items d-flex flex-wrap justify-content-center">
                 <div class="trending-item">
                     <img src="assets/t5.png" alt="trending-1">
-                    <div class="trending-item-name">OUTWEAR</div>
+                    <div class="trending-item-name text-center">OUTWEAR</div>
                 </div>
                 <div class="trending-item">
                     <img src="assets/t6.png" alt="trending-2">
-                    <div class="trending-item-name">WHITE DRESS</div>
+                    <div class="trending-item-name text-center">WHITE DRESS</div>
                 </div>
                 <div class="trending-item">
                     <img src="assets/t7.png" alt="trending-3">
-                    <div class="trending-item-name">SWEATERS</div>
+                    <div class="trending-item-name text-center">SWEATERS</div>
                 </div>
                 <div class="trending-item">
                     <img src="assets/t8.png" alt="trending-4">
-                    <div class="trending-item-name">PARTY</div>
+                    <div class="trending-item-name text-center">PARTY</div>
                 </div>
             </div>
 
-            <div class="hashtags">
-                <div class="hashtag-item">#Thanksgiving</div>
-                <div class="hashtag-item">#NewYears</div>
-                <div class="hashtag-item">#Knitted</div>
-                <div class="hashtag-item">#Pajamas</div>
-                <div class="hashtag-item">#WFH</div>
-                <div class="hashtag-item">#FallFashion</div>
+            <div class="hashtags d-flex justify-content-center align-items-center flex-wrap">
+                <div class="hashtag-item font-weight-bold">#Thanksgiving</div>
+                <div class="hashtag-item font-weight-bold">#NewYears</div>
+                <div class="hashtag-item font-weight-bold">#Knitted</div>
+                <div class="hashtag-item font-weight-bold">#Pajamas</div>
+                <div class="hashtag-item font-weight-bold">#WFH</div>
+                <div class="hashtag-item font-weight-bold">#FallFashion</div>
             </div>
         </div>
     </section>
 
+    <!-- ARRIVAL -->
     <section class="arrival">
-        <div class="arrival-wrapper">
+        <div class="arrival-wrapper d-flex justify-content-end flex-wrap text-white">
             <div class="arrival-details">
-                <div class="arrival-header">
+                <div class="arrival-header font-weight-black">
                     NEW ARRIVALS
                 </div>
-                <div class="arrival-text">
+                <div class="arrival-text font-weight-bold">
                     Get Ready for the holidays with us!
                 </div>
                 <div>
-                    <button>SHOP NOW</button>
+                    <button class="bg-white font-weight-bold">SHOP NOW</button>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- RECENTLY BOUGHT -->
     <section class="recently">
-        <div class="recently-wrapper">
-            <div class="recently-header">
+        <div class="recently-wrapper text-center">
+            <div class="recently-header font-weight-black">
                 <div class="title">Recently Bought</div>
             </div>
 
-            <div class="recent-items">
-                <div class="recent-item" id="item1">
+            <div class="recent-items d-flex flex-wrap justify-content-center">
+                <div class="recent-item d-flex flex-column justify-content-between" id="item1">
                     <img src="assets/r1.png" alt="recent-1">
-                    <div class="recent-item-name">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</div>
+                    <div class="recent-item-name text-start">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</div>
                     <div class="prices">
-                        <div class="base-price">$38</div>
+                        <div class="base-price font-weight-black">$38</div>
                     </div>
                     <div class="buy-button d-flex justify-content-end">
                         <button class="border-0" onclick="addToCart()">BUY</button>
                     </div>
                 </div>
-                <div class="recent-item" id="item2">
+                <div class="recent-item d-flex flex-column justify-content-between" id="item2">
                     <img src="assets/r2.png" alt="recent-2">
-                    <div class="recent-item-name">Chevron Flap Crossbody Bag</div>
+                    <div class="recent-item-name text-start">Chevron Flap Crossbody Bag</div>
                     <div class="prices">
-                        <div class="new-price">$5.77</div>
-                        <div class="old-price">$7.34</div>
+                        <div class="new-price font-weight-black">$5.77</div>
+                        <div class="old-price font-weight-black">$7.34</div>
                     </div>
                     <div class="buy-button d-flex justify-content-end">
                         <button class="border-0" onclick="addToCart()">BUY</button>
                     </div>
                 </div>
-                <div class="recent-item" id="item3">
+                <div class="recent-item d-flex flex-column justify-content-between" id="item3">
                     <img src="assets/r3.png" alt="recent-3">
-                    <div class="recent-item-name">Manilla Tan Multi Plaid Oversized Fringe Scarf</div>
+                    <div class="recent-item-name text-start">Manilla Tan Multi Plaid Oversized Fringe Scarf</div>
                     <div class="prices">
-                        <div class="new-price">$29</div>
-                        <div class="old-price">$39</div>
+                        <div class="new-price font-weight-black">$29</div>
+                        <div class="old-price font-weight-black">$39</div>
                     </div>
                     <div class="buy-button d-flex justify-content-end">
                         <button class="border-0" onclick="addToCart()">BUY</button>
                     </div>
                 </div>
-                <div class="recent-item" id="item4">
+                <div class="recent-item d-flex flex-column justify-content-between" id="item4">
                     <img src="assets/r4.png" alt="recent-4">
-                    <div class="recent-item-name">Diamante Puff Sleeve Dress - Black</div>
+                    <div class="recent-item-name text-start">Diamante Puff Sleeve Dress - Black</div>
                     <div class="prices">
-                        <div class="base-price">$45.99</div>
+                        <div class="base-price font-weight-black">$45.99</div>
                     </div>
                     <div class="buy-button d-flex justify-content-end">
                         <button class="border-0" onclick="addToCart()">BUY</button>
                     </div>
                 </div>
-                <div class="recent-item" id="item5">
+                <div class="recent-item d-flex flex-column justify-content-between" id="item5">
                     <img src="assets/r5.png" alt="recent-5">
-                    <div class="recent-item-name">Banneth Open Front Formal Dress in Black</div>
+                    <div class="recent-item-name text-start">Banneth Open Front Formal Dress in Black</div>
                     <div class="prices">
-                        <div class="new-price">$69</div>
-                        <div class="old-price">$99.95</div>
+                        <div class="new-price font-weight-black">$69</div>
+                        <div class="old-price font-weight-black">$99.95</div>
                     </div>
                     <div class="buy-button d-flex justify-content-end">
                         <button class="border-0" onclick="addToCart()">BUY</button>
@@ -285,14 +294,15 @@
         </div>
     </section>
 
+    <!-- INSPO -->
     <section class="inspo">
         <div class="inspo-wrapper">
-            <div class="inspo-header">
-                <div class="title">Your Next Inspo</div>
+            <div class="inspo-header text-center">
+                <div class="title font-weight-black">Your Next Inspo</div>
                 <div class="subtext">Checkout who’s wearing what by using #THREADEDInspo on Instagram</div>
             </div>
 
-            <div class="inspo-items">
+            <div class="inspo-items d-flex flex-wrap justify-content-center">
                 <div class="inspo-item">
                     <img src="assets/inspo1.png" alt="inspo1">
                 </div>
@@ -309,16 +319,17 @@
                     <img src="assets/inspo5.png" alt="inspo5">
                 </div>
             </div>
-            <div class="inspo-button">
-                <button>
+            <div class="inspo-button text-center">
+                <button class="text-white">
                     VIEW ALL POSTS
                 </button>
             </div>
         </div>
     </section>
 
+    <!-- NEWSLETTER -->
     <section class="newsletter">
-        <div class="newsletter-wrapper d-flex gap-5 justify-content-center align-items-center">
+        <div class="newsletter-wrapper d-flex gap-5 justify-content-center align-items-center font-weight-black">
             <div class="newsletter-text text-white">
                 SIGN UP FOR EXCLUSIVE DEALS AND UPDATES
             </div>
@@ -331,7 +342,8 @@
         </div>
     </section>
 
-    <section class="footer">
+    <!-- FOOTER -->
+    <section c  lass="footer">
         <div class="footer-wrapper d-flex justify-content-around">
             <div class="footer-1">
                 <div class="d-flex d-flex justify-content-between gap-5">

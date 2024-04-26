@@ -1,5 +1,4 @@
 //get cookie 'cart'
-
 function populateData(){
     let cart = JSON.parse(document.cookie.split('; ').find(row => row.startsWith('cart=')).split('=')[1])
 
@@ -46,14 +45,20 @@ function removeItem(itemID){
     let cart = JSON.parse(document.cookie.split('; ').find(row => row.startsWith('cart=')).split('=')[1])
     cart = cart.filter(item => item.id != itemID);
     let date = new Date();
-    date.setTime(date.getTime() + (6*60*60*1000)); // 6 hours from now
+    date.setTime(date.getTime() + (6*60*60*1000)); // set cookie expiration 6 hours from now
     let expires = "; expires=" + date.toUTCString();
     document.cookie = `cart=${JSON.stringify(cart)}${expires}`
     let checkoutItems = document.getElementById('checkoutItems');
     while(checkoutItems.firstChild){
         checkoutItems.removeChild(checkoutItems.firstChild);
     }
+
+    //If cart is empty, remove the cookie
+    if(cart.length === 0){
+        document.cookie = `cart=; expires=Thu, 01 Jan 1970 00:00:00 UTC;`
+    }
     populateData();
+    setCartItemNumber();
  }
 
 populateData()

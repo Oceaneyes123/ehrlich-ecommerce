@@ -1,5 +1,14 @@
 let cart = [];
 
+//This will populate the overview of the cart at the navbar
+function setCartItemNumber(){
+    let cartData = document.cookie.split('; ').find(row => row.startsWith('cart='));
+    if(cartData){
+        cart = JSON.parse(cartData.split('=')[1]);
+    }
+    document.getElementById('addedItems').innerText = cart.length;
+}
+
 //Add new item to the cart
 function addToCart(){
     let itemElement = event.target.parentElement.parentElement;
@@ -30,7 +39,7 @@ function addToCart(){
     document.getElementById('addedItems').innerText = cart.length;
     //create cookie to store items
     let date = new Date();
-    date.setTime(date.getTime() + (6*60*60*1000)); // 6 hours from now
+    date.setTime(date.getTime() + (6*60*60*1000)); // set cookie expiration 6 hours from now
     let expires = "; expires=" + date.toUTCString();
     document.cookie = `cart=${JSON.stringify(cart)}${expires}`;
 }
@@ -61,6 +70,7 @@ function viewCart(){
         cartItems.removeChild(cartItems.firstChild);
     }
 
+    //
     for(let i = 0; i < cart.length; i++){
         let item = cart[i];
         let itemElement = document.createElement('div');
@@ -82,20 +92,22 @@ function viewCart(){
     priceTotalElement.style.fontWeight = '600'; priceTotalElement.style.fontSize = '18px';
     priceTotalElement.innerHTML = `Total: $${parseFloat(priceTotal).toFixed(2)}`;
     cartItems.appendChild(priceTotalElement);
+    console.log('cart viewed')
 
 }
 
+//Handle the active state of the Navbar
+const navItems = document.querySelectorAll('.nav-item');
+navItems.forEach(navItem => {
+    navItem.addEventListener('click', () => {
+        navItems.forEach(navItem => {
+            navItem.children[0].classList.remove('active');
+        });
+        navItem.children[0].classList.add('active');
+    });
+});
 
-    //change the active state of navbar
-   const navItems = document.querySelectorAll('.nav-item');
-   navItems.forEach(navItem => {
-       navItem.addEventListener('click', () => {
-           navItems.forEach(navItem => {
-               navItem.children[0].classList.remove('active');
-           });
-           navItem.children[0].classList.add('active');
-       });
-   });
+setCartItemNumber()
    
    
    
