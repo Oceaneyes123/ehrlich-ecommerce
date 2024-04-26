@@ -28,7 +28,11 @@ function addToCart(){
     }
 
     document.getElementById('addedItems').innerText = cart.length;
-    console.log(cart)
+    //create cookie to store items
+    let date = new Date();
+    date.setTime(date.getTime() + (6*60*60*1000)); // 6 hours from now
+    let expires = "; expires=" + date.toUTCString();
+    document.cookie = `cart=${JSON.stringify(cart)}${expires}`;
 }
 
 function viewCart(){

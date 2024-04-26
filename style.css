@@ -7,6 +7,10 @@ body{
     display: block !important;
 }
 
+.font-weight-bold{
+    font-weight: 600;
+}
+
 .hidden{
     display: none !important;
 }
@@ -480,3 +484,33 @@ body{
     font-size: 12px;
 }
 
+
+/* SHOPPING CART */
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.cart-item-image img{
+    height: 150px;
+}
+
+.cart-actions{
+    cursor: pointer;
+}
+
+.order-summary{
+    flex-basis: 30%;
+}
+
+.summary-box{
+    border: 1px solid black;
+}
+
+.summary-button{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
