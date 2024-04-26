@@ -62,7 +62,6 @@ function viewCart(){
         document.getElementById('cartItemsWrapper').classList.remove('hidden');
     }
 
-    
     let cartItems = document.getElementById('cartItems');
     let priceTotal = 0;
    
@@ -93,8 +92,6 @@ function viewCart(){
     priceTotalElement.style.fontWeight = '600'; priceTotalElement.style.fontSize = '18px';
     priceTotalElement.innerHTML = `Total: $${parseFloat(priceTotal).toFixed(2)}`;
     cartItems.appendChild(priceTotalElement);
-    console.log('cart viewed')
-
 }
 
 //Handle the active state of the Navbar
